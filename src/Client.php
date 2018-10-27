@@ -14,10 +14,9 @@ class Client
     }
 
     /**
-     * @param $symbol
      * @return Stock
      */
-    public function stock($symbol)
+    public function stock()
     {
         return $this->stock_resource;
     }
