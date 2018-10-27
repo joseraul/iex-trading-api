@@ -9,7 +9,7 @@ class Stock extends ResourceAbstract
     public function stats($symbol)
     {
         $response = $this->http_client
-            ->get('/stock/'.$symbol.'/stats');
+            ->get('stock/'.$symbol.'/stats');
 
         return $this->filterResponse($response);
     }
