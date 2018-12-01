@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/joseraul/iex-trading-api.svg?branch=master)](https://travis-ci.org/joseraul/iex-trading-api)
+
 ## IEX Trading Client Api
 PHP Client for the [IEX Trading Api](https://iextrading.com/developer/docs)
 
