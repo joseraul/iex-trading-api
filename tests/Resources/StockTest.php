@@ -32,9 +32,7 @@ class StockTest extends \PHPUnit\Framework\TestCase
     {
         $response = new Response(200, ['X-Foo' => 'Bar'], json_encode(['fake-response']));
 
-        $http_client_mock = $this->getHttpClientMock([
-            'symbol' => 'fake-symbol',
-        ], $response);
+        $http_client_mock = $this->getHttpClientMock($response);
 
         $client = new Stock($http_client_mock);
         $response = $client->stats('fake-symbol');
